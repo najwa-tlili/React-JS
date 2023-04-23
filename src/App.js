@@ -1,36 +1,15 @@
-
-import logo from './logo.svg';
 import './App.css';
-import "./App.css";
+import ProfileApp from './componnent/ProfilPhoto.js'
+import Adress from './componnent/Adress'
+import FullName from './componnent/FullName.js'
 
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import "bootstrap/dist/css/bootstrap.min.css"
-function FormDisabledExample() {
+import React from "react";
+const App = () => {
   return (
-    <Form>
-      <fieldset disabled>
-        <Form.Group className="mb-3">
-          <Form.Label htmlFor="disabledTextInput">Disabled input</Form.Label>
-          <Form.Control id="disabledTextInput" placeholder="Disabled input" />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label htmlFor="disabledSelect">Disabled select menu</Form.Label>
-          <Form.Select id="disabledSelect">
-            <option>Disabled select</option>
-          </Form.Select>
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Check
-            type="checkbox"
-            id="disabledFieldsetCheck"
-            label="Can't check this"
-          />
-        </Form.Group>
-        <Button type="submit">Submit</Button>
-      </fieldset>
-    </Form>
-  );
+    <div> 
+    <ProfileApp/>
+    <Adress/>
+    <FullName/>
+    </div> )
 }
-
-export default FormDisabledExample;
+export default App;
